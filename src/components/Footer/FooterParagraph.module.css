@@ -1,0 +1,12 @@
+.paragraph {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.paragraph-content {
+    font-size:small;
+    width:15rem;
+}

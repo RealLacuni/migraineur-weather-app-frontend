@@ -1,13 +1,28 @@
 import React from "react";
 import Button from "../UI/Button";
+import classes from "./Header.module.css";
+import sun from "../../_assets/transparentsun.png";
 
 const Header = (props) => {
-    return (
-        <div className = "header">
-            <Button action= "sign-in">Sign In</Button>
-            <Button action="sign-up">Sign Up</Button>
+  return (
+    <React.Fragment>
+      <header className={classes.header}>
+        <div className={classes.userPreferences}>
+          <img src={sun} alt="icon of sun and clouds"></img>
+          <p className={classes.tempSetting}>F</p>
         </div>
-    );
-}
+        <p className={classes.title}>{"Migraineur's Weather App"}</p>
+        <div className={classes.buttonDiv}>
+          <Button action="sign-in" buttonStyle={"accountButton"}>
+            Sign In
+          </Button>
+          <Button action="sign-up" buttonStyle={"accountButton"}>
+            Sign Up
+          </Button>
+        </div>
+      </header>
+    </React.Fragment>
+  );
+};
 
 export default Header;
