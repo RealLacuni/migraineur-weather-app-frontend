@@ -17,7 +17,6 @@
 }
 
 .title {
-  text-shadow: -2px 2px rgba(65, 155, 68, 0.784);
   font-size: 3rem;
   color: white;
   font-weight: bold;
@@ -27,43 +26,21 @@
 }
 
 
-.avatar {
-  /* Rounded border */
+ /*.avatar {
   border-radius: 50%;
   height: 64px;
   width: 64px;
 }
 
-.avatar__image {
-  /* Rounded border */
+ .avatar__image {
   border-radius: 50%;
-
-  /* Take full size */
   height: 100%;
   width: 100%;
-}
+} */
 
-.userPreferences {
-  display: flex;
-}
 img {
   height: 4rem;
   width: 4rem;
   background: transparent;
   vertical-align: middle;
-}
-
-.tempSetting {
-  color: rgb(58, 58, 58);
-  font: 1em sans-serif;
-}
-@media screen and (max-width: 600px) {
-  .title {
-    padding-left: 3rem;
-    font-size:0.8rem;
-  }
-  img {
-    height: 3rem;
-    width: 3rem;
-  }
 }

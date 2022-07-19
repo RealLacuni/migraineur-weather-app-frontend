@@ -7,9 +7,9 @@ const Header = (props) => {
   return (
     <React.Fragment>
       <header className={classes.header}>
-        <div className={classes.userPreferences}>
+        <div>
           <img src={sun} alt="icon of sun and clouds"></img>
-          <p className={classes.tempSetting}>F</p>
+          <p>F</p>
         </div>
         <p className={classes.title}>{"Migraineur's Weather App"}</p>
         <div className={classes.buttonDiv}>
