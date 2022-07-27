@@ -1,13 +1,11 @@
-import React from 'react'
-import { StyledTitle } from '../styles/Title.styled'
+import React from "react";
+import { StyledTitle } from "../styles/Title.styled.jsx";
 
-
-export default function Title() {
+export default function Title({ children, className }) {
   return (
     <StyledTitle>
-      <h2>{"Migraineur's"}</h2>
-      <h2>{"Weather"}</h2>
-      <h2>{" App"}</h2>
- </StyledTitle>
-  )
+      {/* Have to use props.className for styled() */}
+      <h2 className={className}>{children}</h2>
+    </StyledTitle>
+  );
 }

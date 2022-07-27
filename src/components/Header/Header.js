@@ -1,14 +1,19 @@
 import { StyledHeader } from "../styles/Header.styled.jsx";
 import React from "react";
-import SubHeader from "./SubHeader";
-import Title from "../Title/Title";
+import Title from "../Title/Title.js";
+import Button from "../UI/Button.js";
 
 const Header = (props) => {
   return (
-    <StyledHeader>
-      <Title/>
-      <SubHeader/>
-    </StyledHeader>
+    <React.Fragment>
+      <StyledHeader>
+        <Title>Migraineur's Weather App</Title>
+        <div className="signup buttons">
+          <Button>Sign In</Button>
+          <Button>Sign Up</Button>
+        </div>
+      </StyledHeader>
+    </React.Fragment>
   );
 };
 

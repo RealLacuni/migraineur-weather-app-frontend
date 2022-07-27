@@ -1,10 +1,10 @@
 import React from "react";
-import "./Footer.css";
 import FooterParagraph from "./FooterParagraph";
+import {StyledFooter} from "../styles/Footer.styled.jsx"
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <StyledFooter>
       <FooterParagraph title="about">
         {
           "This project was born from a desire to practice my software development\
@@ -20,7 +20,7 @@ const Footer = () => {
         <a href="www.reddit.com/r/migraines">reddit/r/migraines</a>
       </FooterParagraph>
       <FooterParagraph title="Test extra footer">like and subscribe</FooterParagraph>
-    </div>
+    </StyledFooter>
   );
 };
 

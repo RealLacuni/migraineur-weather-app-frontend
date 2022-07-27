@@ -1,6 +1,5 @@
 import React from "react";
 import { StyledSubHeader } from "../styles/SubHeader.styled.jsx";
-import sun from "../../_assets/settingIcon.png";
 import Button from "../UI/Button";
 
 export default function SubHeader() {
